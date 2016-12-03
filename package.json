@@ -1,0 +1,14 @@
+{
+  "name": "mapmystreet-nodejs",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "*",
+    "debug": "*",
+    "express": "*",
+	"mongoose": "*",
+	"mongoose-paginate": "*",
+	"request": "*"
+  }
+}
