@@ -1,12 +1,12 @@
 // call the packages we need
 var express		= require('express');        // call express
-var app			= express();                 // define our app using express
 var mongoose	= require('mongoose');
 var http		= require('http');
 var bodyParser  = require('body-parser');
 
 // configure app to use bodyParser()
 // this will let us get the data from a POST
+var app			= express();                 // define our app using express
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.set('port', process.env.PORT || 3000);
@@ -18,7 +18,7 @@ app.set('port', process.env.PORT || 3000);
 var router = express.Router();
 
 // middleware to use for all requests
-router.use(function(req, res, next){
+router.use(function(req, res, next) {
 	// do logging
 	console.log(req.url);
 	// makes sure we go to the next route and we dont stop here

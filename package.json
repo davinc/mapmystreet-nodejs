@@ -7,8 +7,9 @@
     "body-parser": "*",
     "debug": "*",
     "express": "*",
-	"mongoose": "*",
-	"mongoose-paginate": "*",
-	"request": "*"
+  	"request": "*",
+    "mongoose": "*",
+    "mongoose-geojson-schema": "2.1.2",
+  	"mongoose-paginate": "*"
   }
 }
